@@ -3,7 +3,6 @@ package br.com.antonio.projeto.dto;
 import org.springframework.beans.BeanUtils;
 
 import br.com.antonio.projeto.entity.UsuarioEntity;
-import jakarta.persistence.Column;
 
 public class UsuarioDTO {
 	
@@ -67,5 +66,4 @@ public class UsuarioDTO {
 	}
 	
 	
-
 }

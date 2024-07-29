@@ -18,18 +18,19 @@ public class UsuarioEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column (name = "id")
 	private Long id;
 	
-	@Column(nullable = false)
+	@Column(name = "nome", nullable = false)
 	private String nome;
 	
-	@Column(nullable = false, unique = true)
+	@Column(name = "login",nullable = false, unique = true)
 	private String login;
 	
-	@Column(nullable = false)
+	@Column(name = "senha",nullable = false)
 	private String senha;
 	
-	@Column(nullable = false)
+	@Column(name = "email", nullable = false)
 	private String email;
 	
 	public UsuarioEntity(UsuarioDTO usuario) {
